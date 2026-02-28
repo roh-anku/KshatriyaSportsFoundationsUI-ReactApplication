@@ -1,7 +1,6 @@
 import './About.css';
 import { Link } from 'react-router-dom';
 import { ClientCarousel } from '../components/ClientCarousel.jsx';
-// images used in this page
 import t11 from '../images/t11.jpg';
 import t22 from '../images/t22.jpg';
 import t33 from '../images/t33.jpg';

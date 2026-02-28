@@ -3,7 +3,6 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import { ClientCarousel } from '../components/ClientCarousel.jsx';
 
-// import images used on the page
 import sc1 from '../images/sc1.png';
 import bb1 from '../images/bb1.jpg';
 import bb2 from '../images/bb2.jpg';
@@ -32,7 +31,6 @@ export function Home() {
     ];
     const [current, setCurrent] = React.useState(0);
 
-    // advance slides every 5 seconds
     React.useEffect(() => {
         const interval = setInterval(() => {
             setCurrent(prev => (prev + 1) % slides.length);
@@ -40,16 +38,12 @@ export function Home() {
         return () => clearInterval(interval);
     }, [slides.length]);
 
-    // testimonials carousel data (shared component handles the behaviour)
     const testimonials = [
         { img: t1, name: 'Kelly West', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,delectus reiciendis maiores alias consequatur aut.maiores alias' },
         { img: t2, name: 'Sunny Jack', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,delectus reiciendis maiores alias consequatur aut.maiores alias' },
         { img: t3, name: 'jolly Deo', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,delectus reiciendis maiores alias consequatur aut.maiores alias' }
     ];
     
-    // no internal state here; ClientCarousel manages its own index
-
-
     return (
         <>
             {/* slides/banner section for homepage */}

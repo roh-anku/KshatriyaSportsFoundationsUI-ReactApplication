@@ -1,6 +1,5 @@
 import './Gallery.css';
 import { Link } from 'react-router-dom';
-// gallery images
 import g1 from '../images/g1.jpg';
 import g2 from '../images/g2.jpg';
 import g3 from '../images/g3.jpg';

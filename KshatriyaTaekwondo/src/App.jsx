@@ -8,7 +8,6 @@ import {Contact} from './pages/Contact.jsx';
 import {OurServices} from './pages/OurServices.jsx';
 import {Gallery} from './pages/Gallery.jsx';
 import {Blog} from './pages/Blog.jsx';
-// new admin related components
 import { AdminLogin } from './components/AdminLogin.jsx';
 import { AdminStudentDetails } from './components/AdminStudentDetails.jsx';
 
@@ -26,13 +25,12 @@ function ProtectedAdminRoute({ children }) {
 function App() {
 
   const router = createBrowserRouter([
-    // redirect bare root to /Home so we always have a matching route
     { path: '/', element: <Navigate to="/Home" replace /> },
     {
       path: '/Home',
       element: <RootLayout />,
       children: [
-        // render Home at /Home
+        // renders Home at /Home
         { index: true, element: <Home /> },
         { path: 'About', element: <About /> },
         { path: 'Gallery', element: <Gallery /> },
@@ -53,7 +51,7 @@ function App() {
     }
   ]);
 
-  // render the router provider so all Link/Route components have context
+  // renders the router provider so all Link/Route components have context
   return <RouterProvider router={router} />;
 }
 

@@ -29,13 +29,11 @@ export function RootLayout()
             const id = location.hash.replace('#', '');
             const el = document.getElementById(id);
             if (el) {
-                // smooth scroll to the section
                 el.scrollIntoView({ behavior: 'smooth' });
             }
         }
     }, [location]);
 
-    // don't render header/footer for standalone admin routes (login & student list)
     const hideChrome = location.pathname.endsWith('/AdminLogin')
         || location.pathname.endsWith('/AdminStudentDetails');
 

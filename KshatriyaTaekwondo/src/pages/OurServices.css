@@ -1,4 +1,3 @@
-/* equalize service boxes and push learn-more button to bottom */
 .agile-service-grid .w3layouts-service-list {
     display: flex;
 }
@@ -8,7 +7,6 @@
     flex-direction: column;
     justify-content: space-between;
 }
-/* ensure text wraps nicely */
 .agile-service-grid .ser-inner-info h4 {
     word-break: break-word;
 }

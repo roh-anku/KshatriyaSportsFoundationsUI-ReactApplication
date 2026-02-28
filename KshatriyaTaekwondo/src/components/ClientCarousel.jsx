@@ -1,10 +1,5 @@
 import React from 'react';
 
-// A simple manual carousel for testimonial/client slides.  It preserves the
-// original styling used throughout the project ("carousel-inner",
-// "carousel-control-prev", etc.) but replaces the Bootstrap/jQuery behaviour
-// with React state and light handlers.  The parent page provides the
-// `testimonials` array containing `{img,name,text}` objects.
 export function ClientCarousel({ testimonials }) {
     const [current, setCurrent] = React.useState(0);
 

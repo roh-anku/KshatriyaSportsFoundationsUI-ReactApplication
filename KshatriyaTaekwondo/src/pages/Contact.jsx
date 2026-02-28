@@ -19,7 +19,6 @@ export function Contact() {
     const [subscribeSubmitted, setSubscribeSubmitted] = React.useState(false);
 
     React.useEffect(() => {
-        // ensure page is at top when this route renders
         window.scrollTo(0, 0);
     }, []);
 
@@ -73,13 +72,11 @@ export function Contact() {
         if (Object.keys(errors).length) return;
 
         try {
-            //db call using fetch
             const enquiryRequestDto = new EnquiryModel(contactForm.name, contactForm.email, contactForm.phone, contactForm.message);
             const response = await SendEnquiry(enquiryRequestDto);
             
             alert(response.message);
 
-            //reset states- for new enquiry
             setContactForm({ name: '', email: '', phone: '', message: '' });
             setContactErrors({});
             setContactSubmitted(false);

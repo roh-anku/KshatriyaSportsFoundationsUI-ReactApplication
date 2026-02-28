@@ -1,7 +1,6 @@
 import React from 'react';
 import './Blog.css';
 import { Link } from 'react-router-dom';
-// images
 import g8 from '../images/g8.jpg';
 import g2 from '../images/g2.jpg';
 import g1 from '../images/g1.jpg';
