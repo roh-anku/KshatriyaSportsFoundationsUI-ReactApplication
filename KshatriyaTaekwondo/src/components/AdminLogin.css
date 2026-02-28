@@ -1,0 +1,88 @@
+.admin-login {
+  position: relative;
+  min-height: calc(100vh - 80px);
+  display: block;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 50%, #fbc2eb 100%);
+  background-size: cover;
+}
+.login-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 16px;
+}
+.logo-bar {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+.logo-link img {
+  height: 48px;
+  width: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.admin-card {
+  width: 420px;
+  max-width: calc(100% - 40px);
+  background: rgba(255,255,255,0.98);
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.admin-card h3 {
+  color: #1f3b4d;
+  letter-spacing: 0.4px;
+}
+.form-control {
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: 1px solid #e6e9ee;
+}
+.form-control::placeholder { color: #bfc9d1; opacity: 1; }
+.form-control::-webkit-input-placeholder { color: #bfc9d1; }
+.form-control::-moz-placeholder { color: #bfc9d1; }
+.form-control:-ms-input-placeholder { color: #bfc9d1; }
+.form-control::-ms-input-placeholder { color: #bfc9d1; }
+.form-group label {
+  font-weight: 600;
+  color: #33475b;
+}
+.btn-primary {
+  background: linear-gradient(90deg,#ff7e5f,#feb47b) !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 6px 18px rgba(255,126,95,0.22);
+}
+.btn-secondary {
+  background: linear-gradient(90deg,#6a86ff,#4ecdc4) !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  color: #fff !important;
+}
+.admin-card .invalid-feedback {
+  display: block !important;
+  color: #c82333;
+}
+
+.admin-login-form-error {
+  display: block !important;
+  margin-top: -6px;
+  margin-bottom: 8px;
+}
+
+.admin-login-actions {
+  margin-top: 14px;
+}
+
+@media (max-width: 576px) {
+  .logo-link img { height: 40px; }
+  .admin-card { padding: 20px; width: 320px; }
+}

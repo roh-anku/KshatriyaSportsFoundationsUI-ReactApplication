@@ -1,0 +1,12 @@
+.agile-service-grid .w3layouts-service-list {
+    display: flex;
+}
+.agile-service-grid .w3layouts-service-list .white-shadow {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.agile-service-grid .ser-inner-info h4 {
+    word-break: break-word;
+}

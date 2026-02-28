@@ -1,0 +1,278 @@
+.admin-bg {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.admin-greeting-text {
+    position: absolute;
+    top: 24px;
+    left: 36px;
+    font-size: 0.95rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.admin-students-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    padding: 2.5rem 2.8rem 2rem;
+    width: min(1120px, 100%);
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.admin-logout-btn {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.95rem;
+    background: #ffebee;
+    color: #c62828;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-logout-btn:hover {
+    background: #ffcdd2;
+}
+
+.admin-title {
+    color: #1a237e;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.filter-controls {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.6rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.filter-controls select,
+.filter-controls input {
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #bdbdbd;
+    font-size: 1.1rem;
+    background: #f4f8fb;
+    transition: box-shadow 0.2s;
+    width: 260px;
+}
+
+.filter-controls input:focus,
+.filter-controls select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #6a11cb33;
+}
+
+.admin-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0 14px;
+    margin-bottom: 0.8rem;
+}
+
+.admin-table-wrap {
+    width: 100%;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 1rem 1.4rem;
+    border-radius: 14px;
+    text-align: center;
+    vertical-align: middle;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    font-size: 1.02rem;
+    border: none;
+}
+
+.admin-table th {
+    background: #6a11cb;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 2px 8px #6a11cb22;
+}
+
+.admin-table tbody tr.row-fulfilled td {
+    background: #b8f5bc;
+    color: #155724;
+    box-shadow: 0 0 0 1px #9be7a0 inset;
+}
+
+.admin-table tbody tr.row-unfulfilled td {
+    background: #efefef;
+    color: #666;
+}
+
+.admin-table tbody td {
+    border-radius: 0;
+}
+
+.admin-table tbody td:first-child {
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.admin-table tbody td:last-child {
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.admin-table td:first-child,
+.admin-table th:first-child {
+    width: 8%;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+}
+
+.admin-table td:last-child,
+.admin-table th:last-child {
+    width: 18%;
+}
+
+.admin-table td:nth-child(2),
+.admin-table th:nth-child(2) {
+    width: 12%;
+}
+
+.admin-table td:nth-child(3),
+.admin-table th:nth-child(3) {
+    width: 22%;
+}
+
+.admin-table td:nth-child(4),
+.admin-table th:nth-child(4) {
+    width: 11%;
+}
+
+.admin-table td:nth-child(5),
+.admin-table th:nth-child(5) {
+    width: 14%;
+}
+
+.admin-table td:nth-child(6),
+.admin-table th:nth-child(6) {
+    width: 15%;
+}
+
+.admin-table td textarea {
+    width: 100%;
+    min-height: 38px;
+    box-sizing: border-box;
+}
+
+.student-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.9rem;
+}
+
+.student-pagination button {
+    background: #e3f0ff;
+    color: #2575fc;
+    border: none;
+    border-radius: 8px;
+    padding: 0.45rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px #6a11cb11;
+}
+
+.student-pagination button.active,
+.student-pagination button:hover:not(:disabled) {
+    background: #2575fc;
+    color: #fff;
+}
+
+.student-pagination button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.admin-grid-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    margin-top: 0.9rem;
+    padding-right: 1.2rem;
+}
+
+.admin-save-btn,
+.admin-clear-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1.1rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-save-btn {
+    background: #2e7d32;
+    color: #fff;
+}
+
+.admin-save-btn:hover {
+    background: #1b5e20;
+}
+
+.admin-clear-btn {
+    background: #eceff1;
+    color: #455a64;
+}
+
+.admin-clear-btn:hover {
+    background: #cfd8dc;
+}
+
+.admin-action-status {
+    margin-top: 0.6rem;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #1a237e;
+}
+
+@media (max-width: 992px) {
+    .admin-table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .admin-table {
+        min-width: 980px;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-table th,
+    .admin-table td {
+        padding: 0.75rem 0.85rem;
+        font-size: 0.9rem;
+    }
+}
