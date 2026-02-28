@@ -30,7 +30,7 @@ export async function SaveStudentDetails(studentDetailsList,jwtToken)
     });
 
     if (response.status === 403) {
-        throw new Error("Insuffucient privileges, please contact an Administrator");
+        throw new Error("Insufficient privileges, please contact an Administrator");
     }
 
     if (!response.ok) {
