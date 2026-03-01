@@ -92,10 +92,10 @@
 }
 .logo-link {
   display: inline-block;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   color: #1a73e8;
-  text-decoration: underline;
+  text-decoration: none;
   text-shadow: 0 0 0 rgba(26, 115, 232, 0.1);
   animation: adminGoHomeBlink 1.5s ease-in-out infinite;
 }
