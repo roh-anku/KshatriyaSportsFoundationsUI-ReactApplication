@@ -142,7 +142,7 @@ export function Contact() {
                                     <div className="contact_footer_grid_left text-center mb-3">
                                         <h5>Email</h5>
                                     </div>
-                                    <p><a href="mailto:poonam.alan@gmail.com">akshay.khillari@gmail.com</a> <br /><a href="mailto:poonam.alan@gmail.com">poonam.alan@gmail.com</a></p>
+                                    <p><a href="mailto:akshaykhillari75@gmail.com">akshaykhillari75@gmail.com</a> <br /><a href="mailto:poonam.alan@gmail.com">poonam.alan@gmail.com</a></p>
                                 </div>
                             </div>
                         </div>
