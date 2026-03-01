@@ -88,7 +88,7 @@ export function About() {
                 <div className="container py-lg-5 py-md-5 py-sm-4 py-3">
                     <h3 className="title text-center clr mb-lg-5 mb-md-4 mb-sm-4 mb-3">Our Trainers</h3>
                     <div className="row">
-                        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb30 team-four-grids-w3layouts">
+                        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb30 team-four-grids-layouts">
                             <div data-aos="fade-up" className="team-block active">
                                 <div className="team-img">
                                     <a href="#">
@@ -107,7 +107,7 @@ export function About() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb30 team-four-grids-w3layouts">
+                        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb30 team-four-grids-layouts">
                             <div data-aos="fade-up" className="team-block">
                                 <div className="team-img">
                                     <a href="#">
@@ -126,7 +126,7 @@ export function About() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb30 team-four-grids-w3layouts">
+                        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb30 team-four-grids-layouts">
                             <div data-aos="fade-up" className="team-block">
                                 <div className="team-img">
                                     <a href="#">
@@ -145,7 +145,7 @@ export function About() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb30 team-four-grids-w3layouts">
+                        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb30 team-four-grids-layouts">
                             <div data-aos="fade-up" className="team-block">
                                 <div className="team-img">
                                     <a href="#">

@@ -194,7 +194,7 @@ export function Home() {
                 <div className="container-fluid py-lg-5 py-md-5 py-sm-4 py-4">
                     <h3 className="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Our Services</h3>
                     <div className="row service-abt-info text-left">
-                        <div className="col-lg-7 w3layouts-service-right">
+                        <div className="col-lg-7 layouts-service-right">
                             <div className="ser-list-using-agile">
                                 <h4>What We Offer For You</h4>
                                 <div className="info-sub-w3">

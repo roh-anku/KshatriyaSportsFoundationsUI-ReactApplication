@@ -36,7 +36,7 @@ export function OurServices() {
                 <div className="container-fluid py-lg-5 py-md-4 py-sm-4 py-3">
                     <h3 className="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Our Expertise</h3>
                     <div className="row agile-service-grid pt-lg-4 pt-md-4 pt-3">
-                        <div className="col-lg-6 col-md-12 col-sm-12 w3layouts-service-list text-center">
+                        <div className="col-lg-6 col-md-12 col-sm-12 layouts-service-list text-center">
                             <div className="white-shadow">
                                 <div className="text-wls-ser-bake">
                                     <span className="fas fa-bullhorn banner-icon"></span>
@@ -52,7 +52,7 @@ export function OurServices() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12 w3layouts-service-list text-center gap-1">
+                        <div className="col-lg-3 col-md-6 col-sm-12 layouts-service-list text-center gap-1">
                             <div className="white-shadow">
                                 <div className="text-wls-ser-bake">
                                     <span className="fab fa-superpowers banner-icon"></span>
@@ -66,7 +66,7 @@ export function OurServices() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12 w3layouts-service-list text-center gap-1">
+                        <div className="col-lg-3 col-md-6 col-sm-12 layouts-service-list text-center gap-1">
                             <div className="white-shadow">
                                 <div className="text-wls-ser-bake">
                                     <span className="fas fa-bicycle banner-icon"></span>
@@ -82,7 +82,7 @@ export function OurServices() {
                         </div>
                     </div>
                     <div className="row agile-service-grid pt-lg-4 pt-md-4 pt-4">
-                        <div className="col-lg-3 col-md-6 col-sm-12 w3layouts-service-list text-center gap-2">
+                        <div className="col-lg-3 col-md-6 col-sm-12 layouts-service-list text-center gap-2">
                             <div className="white-shadow">
                                 <div className="text-wls-ser-bake">
                                     <span className="fab fa-cloudversify banner-icon"></span>
@@ -96,7 +96,7 @@ export function OurServices() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12 w3layouts-service-list text-center gap-2">
+                        <div className="col-lg-3 col-md-6 col-sm-12 layouts-service-list text-center gap-2">
                             <div className="white-shadow">
                                 <div className="text-wls-ser-bake">
                                     <span className="fas fa-fire banner-icon"></span>
@@ -110,7 +110,7 @@ export function OurServices() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-12 col-sm-12 w3layouts-service-list text-center ">
+                        <div className="col-lg-6 col-md-12 col-sm-12 layouts-service-list text-center ">
                             <div className="white-shadow">
                                 <div className="text-wls-ser-bake">
                                     <span className="far fa-snowflake banner-icon"></span>

@@ -100,7 +100,7 @@ h1 a.navbar-brand {
     margin-left: 5px;
     margin-right: 0px;
 }
-.header-w3layouts {
+.header-layouts {
     position: absolute;
     width: 100%;
     z-index: 9999;
@@ -811,12 +811,12 @@ a.w3_play_icon1:hover {
     font-size: 1.5rem;
     cursor: pointer;
 }
-.fill-form-w3layouts ul li span {
+.fill-form-layouts ul li span {
     font-size: 24px;
     color:#47c19b;
 	margin: 12px 14px 0px 0px;
 }
-.fill-form-w3layouts ul li p {
+.fill-form-layouts ul li p {
     font-size: 15px;
     color: #000;
 	    display: inline-block;
@@ -1464,7 +1464,7 @@ a.w3_play_icon1 {
 .wthree-form-list h4 {
     font-size: 16px;
 }
-.fill-form-w3layouts ul li span {
+.fill-form-layouts ul li span {
     font-size: 22px;
     margin: 10px 14px 0px 0px;
 }
@@ -1491,7 +1491,7 @@ a.w3_play_icon1 {
 .social-media {
     bottom: 121px;
 }
-.team-four-grids-w3layouts:nth-child(3),.team-four-grids-w3layouts:nth-child(4) {
+.team-four-grids-layouts:nth-child(3),.team-four-grids-layouts:nth-child(4) {
     margin-top: 25px;
 }
 .gap-1 {
@@ -1828,9 +1828,9 @@ span.cost {
 .abut-inner-img:nth-child(2),
 .abut-inner-img:nth-child(3),
 .abut-inner-img:nth-child(4),
-.team-four-grids-w3layouts:nth-child(2),
-.team-four-grids-w3layouts:nth-child(3),
-.team-four-grids-w3layouts:nth-child(4) {
+.team-four-grids-layouts:nth-child(2),
+.team-four-grids-layouts:nth-child(3),
+.team-four-grids-layouts:nth-child(4) {
     margin-top: 22px;
 }
 .social-media {
@@ -1964,7 +1964,7 @@ p.groom-right {
 .client-matter h6 {
     font-size: 16px;
 }
-.fill-form-w3layouts ul li p {
+.fill-form-layouts ul li p {
     font-size: 14px;
 }
 .abut-inner-right h4 {
@@ -2096,7 +2096,7 @@ a.w3_play_icon1 {
         letter-spacing: 1px;
     }
 
-    .header-w3layouts {
+    .header-layouts {
         padding: .8em .6em;
     }
 }
