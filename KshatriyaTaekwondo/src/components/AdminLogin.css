@@ -90,6 +90,39 @@
   top: 18px;
   left: 18px;
 }
+.logo-link {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a73e8;
+  text-decoration: underline;
+  text-shadow: 0 0 0 rgba(26, 115, 232, 0.1);
+  animation: adminGoHomeBlink 1.5s ease-in-out infinite;
+}
+
+.logo-link:hover,
+.logo-link:focus {
+  text-decoration: underline;
+}
+
+@keyframes adminGoHomeBlink {
+  0%,
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 0 rgba(26, 115, 232, 0.1);
+  }
+  50% {
+    opacity: 0.35;
+    text-shadow: 0 0 10px rgba(26, 115, 232, 0.45);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-link {
+    animation: none;
+  }
+}
+
 .logo-link img {
   height: 48px;
   width: auto;
