@@ -679,13 +679,27 @@ a.w3_play_icon1:hover {
     color: #000;
 }
 .list-price ul {
-    list-style: none;
+    list-style: disc;
+    list-style-position: inside;
+    padding-left: 0;
 }
 .list-price ul li {
     font-size: 16px;
+    line-height: 1.6;
     color: #000;
     padding: 15px 0px;
     letter-spacing: 1px;
+    text-align: left;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.priceing-tag .list-price ul li::marker {
+    color: #47c19b;
+}
+
+.priceing-tag:nth-child(2) .list-price ul li::marker {
+    color: #000;
 }
 .cost p {
     font-size: 22px;
