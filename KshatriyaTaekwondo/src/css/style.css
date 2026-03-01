@@ -2058,3 +2058,46 @@ a.w3_play_icon1 {
 }
 }
 
+@media (max-width: 991px) {
+    .headr-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hedder-up,
+    .header-call {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 a.navbar-brand {
+        display: inline-block;
+        white-space: normal;
+        text-align: center;
+        line-height: 1.2;
+        margin-left: 0;
+    }
+
+    .header-call {
+        padding-top: 0;
+    }
+
+    .header-call .admin-login-btn {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 a.navbar-brand {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .header-w3layouts {
+        padding: .8em .6em;
+    }
+}
+
