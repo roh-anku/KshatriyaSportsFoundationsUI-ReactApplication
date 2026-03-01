@@ -5,6 +5,9 @@ import { SendEnquiry } from '../services/ContactService.js';
 import { EnquiryModel } from '../models/ContactDto.js'; 
 
 export function Contact() {
+    const ENQUIRY_LOADER_SUCCESS_DELAY_MS = 4000;
+    const ENQUIRY_LOADER_ERROR_DELAY_MS = 5000;
+
     const [contactForm, setContactForm] = React.useState({
         name: '',
         email: '',
@@ -13,6 +16,12 @@ export function Contact() {
     });
     const [contactErrors, setContactErrors] = React.useState({});
     const [contactSubmitted, setContactSubmitted] = React.useState(false);
+    const [isSubmittingEnquiry, setIsSubmittingEnquiry] = React.useState(false);
+    const [enquiryLoader, setEnquiryLoader] = React.useState({
+        isVisible: false,
+        status: 'loading',
+        message: 'Sending your enquiry...'
+    });
 
     const [subscribeEmail, setSubscribeEmail] = React.useState('');
     const [subscribeErrors, setSubscribeErrors] = React.useState({});
@@ -23,6 +32,7 @@ export function Contact() {
     }, []);
 
     const isValidEmail = (email) => /\S+@\S+\.\S+/.test(email);
+    const delay = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 
     const validateContactForm = () => {
         const errors = {};
@@ -62,8 +72,9 @@ export function Contact() {
     };
 
     const handleContactSubmit = async (event) => {
-        
         event.preventDefault();
+        if (isSubmittingEnquiry) return;
+
         setContactSubmitted(true);
 
         const errors = validateContactForm();
@@ -71,17 +82,41 @@ export function Contact() {
         
         if (Object.keys(errors).length) return;
 
+        setIsSubmittingEnquiry(true);
+        setEnquiryLoader({
+            isVisible: true,
+            status: 'loading',
+            message: 'Sending your enquiry...'
+        });
+
         try {
             const enquiryRequestDto = new EnquiryModel(contactForm.name, contactForm.email, contactForm.phone, contactForm.message);
             const response = await SendEnquiry(enquiryRequestDto);
-            
-            alert(response.message);
+
+            setEnquiryLoader({
+                isVisible: true,
+                status: 'success',
+                message: response.message || 'Enquiry sent successfully.'
+            });
 
             setContactForm({ name: '', email: '', phone: '', message: '' });
             setContactErrors({});
             setContactSubmitted(false);
+            await delay(ENQUIRY_LOADER_SUCCESS_DELAY_MS);
         } catch (error) {
-            alert(error?.message || 'Failed to send enquiry. Please try again.');
+            const errorMessage = error?.message || 'Failed to send enquiry. Please try again.';
+            setEnquiryLoader({
+                isVisible: true,
+                status: 'error',
+                message: errorMessage
+            });
+            await delay(ENQUIRY_LOADER_ERROR_DELAY_MS);
+        } finally {
+            setEnquiryLoader((previousState) => ({
+                ...previousState,
+                isVisible: false
+            }));
+            setIsSubmittingEnquiry(false);
         }
     };
 
@@ -101,6 +136,20 @@ export function Contact() {
 
     return (
         <>
+            {enquiryLoader.isVisible && (
+                <div className="enquiry-loader-overlay" role="status" aria-live="polite" aria-label="Sending enquiry, please wait">
+                    <div className={`enquiry-loader-card enquiry-loader-${enquiryLoader.status}`}>
+                        {enquiryLoader.status === 'loading' ? (
+                            <div className="enquiry-loader-spinner" aria-hidden="true"></div>
+                        ) : (
+                            <div className="enquiry-loader-status-icon" aria-hidden="true">
+                                {enquiryLoader.status === 'success' ? '✓' : '!'}
+                            </div>
+                        )}
+                        <p>{enquiryLoader.message}</p>
+                    </div>
+                </div>
+            )}
             {/* banner */}
             <div className="inner_page-banner two-img"></div>
             {/* breadcrumb */}
@@ -158,6 +207,7 @@ export function Contact() {
                                                 placeholder="Name"
                                                 value={contactForm.name}
                                                 onChange={handleContactChange}
+                                                disabled={isSubmittingEnquiry}
                                                 aria-invalid={contactSubmitted && contactErrors.name ? 'true' : 'false'}
                                             />
                                             {contactSubmitted && contactErrors.name && (
@@ -172,6 +222,7 @@ export function Contact() {
                                                 placeholder="Email"
                                                 value={contactForm.email}
                                                 onChange={handleContactChange}
+                                                disabled={isSubmittingEnquiry}
                                                 aria-invalid={contactSubmitted && contactErrors.email ? 'true' : 'false'}
                                             />
                                             {contactSubmitted && contactErrors.email && (
@@ -191,6 +242,7 @@ export function Contact() {
                                                 placeholder="Phone"
                                                 value={contactForm.phone}
                                                 onChange={handleContactChange}
+                                                disabled={isSubmittingEnquiry}
                                                 aria-invalid={contactSubmitted && contactErrors.phone ? 'true' : 'false'}
                                             />
                                             {contactSubmitted && contactErrors.phone && (
@@ -208,9 +260,12 @@ export function Contact() {
                                             placeholder="Meassage"
                                             value={contactForm.message}
                                             onChange={handleContactChange}
+                                            disabled={isSubmittingEnquiry}
                                         ></textarea>
                                     </div>
-                                    <button type="submit" className="btn sent-butnn btn-lg">Send Enquiry</button>
+                                    <button type="submit" className="btn sent-butnn btn-lg" disabled={isSubmittingEnquiry}>
+                                        {isSubmittingEnquiry ? 'Sending...' : 'Send Enquiry'}
+                                    </button>
                                 </form>
                             </div>
                             <div className="col-lg-6 address_mail_footer_grids">
@@ -234,6 +289,7 @@ export function Contact() {
                                         placeholder="Email"
                                         value={subscribeEmail}
                                         onChange={(event) => setSubscribeEmail(event.target.value)}
+                                        disabled={isSubmittingEnquiry}
                                         aria-invalid={subscribeSubmitted && subscribeErrors.email ? 'true' : 'false'}
                                     />
                                     {subscribeSubmitted && subscribeErrors.email && (
@@ -244,7 +300,7 @@ export function Contact() {
                                     )}
                                 </div>
                                 <div className="text-center">
-                                    <button type="submit" className="btn subscrib-btnn">Submit</button>
+                                    <button type="submit" className="btn subscrib-btnn" disabled={isSubmittingEnquiry}>Submit</button>
                                 </div>
                             </form>
                         </div>

@@ -11,7 +11,7 @@ export function Header() {
 
     return (
         <div className="header-outs" id="home">
-            <div className="header-w3layouts">
+            <div className="header-layouts">
                 <div className="headr-title">
                     <div className="hedder-up">
                         <h1><Link className="navbar-brand" to="/Home">Kshatriya Sports Foundations</Link></h1>

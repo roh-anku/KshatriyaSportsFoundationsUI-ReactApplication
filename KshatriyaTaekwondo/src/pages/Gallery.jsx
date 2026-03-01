@@ -10,6 +10,15 @@ import g7 from '../images/g7.jpg';
 import g8 from '../images/g8.jpg';
 
 export function Gallery() {
+    const youtubeVideoLinks = [
+        'https://www.youtube.com/embed/cz7cctS3eHQ',
+        'https://www.youtube.com/embed/rDPN-ML5wKQ',
+        'https://www.youtube.com/embed/-34FiqwkQ9I',
+        'https://www.youtube.com/embed/e64AtWekQVo',
+        'https://www.youtube.com/embed/bfBubv0mYgU',
+        'https://www.youtube.com/embed/3ymdFmJAzOE'
+    ];
+
     return (
         <>
             {/* banner */}
@@ -102,37 +111,114 @@ export function Gallery() {
                     </div>
                     <div className="row grid gallery-info">
                         <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
-                            <figure className="effect-moses">
-                                <img src={g6} alt="" className="img-fluid" />
-                                <figcaption>
-                                    <h4>AK<span><br />Sports</span></h4>
-                                    <p>Lorem ipsum dolor</p>
-                                    <a href={g6} className="gallery-box" data-lightbox="example-set" data-title="">
-                                    </a>
-                                </figcaption>
-                            </figure>
+                            <div className="gallery-video-card">
+                                <iframe
+                                    className="gallery-video"
+                                    src={youtubeVideoLinks[0]}
+                                    title="Taekwondo Video 1"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                            <div className="gallery-video-caption">
+                                <h4>AK<span>Sports</span></h4>
+                                <p>Lorem ipsum dolor</p>
+                                <br/><br/>
+                            </div>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
-                            <figure className="effect-moses">
-                                <img src={g7} alt="" className="img-fluid" />
-                                <figcaption>
-                                    <h4>AK<span><br />Sports</span></h4>
-                                    <p>Lorem ipsum dolor</p>
-                                    <a href={g7} className="gallery-box" data-lightbox="example-set" data-title="">
-                                    </a>
-                                </figcaption>
-                            </figure>
+                            <div className="gallery-video-card">
+                                <iframe
+                                    className="gallery-video"
+                                    src={youtubeVideoLinks[1]}
+                                    title="Taekwondo Video 2"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                            <div className="gallery-video-caption">
+                                <h4>AK<span>Sports</span></h4>
+                                <p>Lorem ipsum dolor</p>
+                                <br/><br/>
+                            </div>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
-                            <figure className="effect-moses">
-                                <img src={g8} alt="" className="img-fluid" />
-                                <figcaption>
-                                    <h4>AK<span><br />Sports</span></h4>
-                                    <p>Lorem ipsum dolor</p>
-                                    <a href={g8} className="gallery-box" data-lightbox="example-set" data-title="">
-                                    </a>
-                                </figcaption>
-                            </figure>
+                            <div className="gallery-video-card">
+                                <iframe
+                                    className="gallery-video"
+                                    src={youtubeVideoLinks[2]}
+                                    title="Taekwondo Video 3"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                            <div className="gallery-video-caption">
+                                <h4>AK<span>Sports</span></h4>
+                                <p>Lorem ipsum dolor</p>
+                                <br/><br/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row grid gallery-info">
+                        <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
+                            <div className="gallery-video-card">
+                                <iframe
+                                    className="gallery-video"
+                                    src={youtubeVideoLinks[3]}
+                                    title="Taekwondo Video 1"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                            <div className="gallery-video-caption">
+                                <h4>AK<span>Sports</span></h4>
+                                <p>Lorem ipsum dolor</p>
+                                <br/><br/>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
+                            <div className="gallery-video-card">
+                                <iframe
+                                    className="gallery-video"
+                                    src={youtubeVideoLinks[4]}
+                                    title="Taekwondo Video 2"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                            <div className="gallery-video-caption">
+                                <h4>AK<span>Sports</span></h4>
+                                <p>Lorem ipsum dolor</p>
+                                <br/><br/>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
+                            <div className="gallery-video-card">
+                                <iframe
+                                    className="gallery-video"
+                                    src={youtubeVideoLinks[5]}
+                                    title="Taekwondo Video 3"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                            <div className="gallery-video-caption">
+                                <h4>AK<span>Sports</span></h4>
+                                <p>Lorem ipsum dolor</p>
+                                <br/><br/>
+                            </div>
                         </div>
                     </div>
                 </div>
