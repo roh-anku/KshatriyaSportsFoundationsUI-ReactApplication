@@ -175,7 +175,7 @@ export function Contact() {
                                     <div className="contact_footer_grid_left text-center mb-3">
                                         <h5> Address</h5>
                                     </div>
-                                    <p>Purva Shrushti, A-911, Sinhagad road,<br />Pune-411041, India</p>
+                                    <p>Coming soon..<br />Pune-411051, India</p>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-4 text-center contact-address-grid">
@@ -183,7 +183,7 @@ export function Contact() {
                                     <div className="contact_footer_grid_left text-center mb-3">
                                         <h5>Phone</h5>
                                     </div>
-                                    <p>+(91) 9130330506 (Akshay sir)<br />+(91) 8149200719 (Poonam Ma'am)</p>
+                                    <p>+(91) 9130330506 (Akshay Sir)<br />+(91) 8149200719 (Poonam Ma'am)</p>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-4 text-center contact-address-grid">
@@ -269,7 +269,7 @@ export function Contact() {
                                 </form>
                             </div>
                             <div className="col-lg-6 address_mail_footer_grids">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.5390904454584!2d73.80425917442906!3d18.459224771046777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2956d7c40635b%3A0x1b22ff2db12368f4!2sPoorva%20Shrushti%20Wing-B%20Co-operative%20Housing%20Society!5e0!3m2!1sen!2sin!4v1772086598078!5m2!1sen!2sin"></iframe>                           
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.0684903822503!2d73.82543967519075!3d18.48055658260528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29558701ee9c1%3A0xd7c45c5919f6b297!2sNityanand%20hall%2C%20Vitthalwadi%2C%20Hingne%20Khurd%2C%20Pune%2C%20Maharashtra%20411051!5e0!3m2!1sen!2sin!4v1772386275629!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                          
                             </div>
                         </div>
                     </div>

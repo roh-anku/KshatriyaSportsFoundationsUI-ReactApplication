@@ -1,21 +1,57 @@
 import React from 'react';
 import './Blog.css';
 import { Link } from 'react-router-dom';
-import g8 from '../images/g8.jpg';
-import g2 from '../images/g2.jpg';
-import g1 from '../images/g1.jpg';
+import g8 from '../images/mobilityForHigherKicks.png';
+import g2 from '../images/nutrition.jpg';
+import g1 from '../images/buildStamina.png';
 import g4 from '../images/g4.jpg';
 import g7 from '../images/g7.jpg';
-import g6 from '../images/g6.jpg';
+import g6 from '../images/BeltExamPreparationGuide.jpg';
 
 export function Blog() {
     const posts = [
-        { img: g8, date: '15 May 2018', title: 'Stretching', snippet: 'Lorem ipsum dolor adipiscing elit, sed do sit amet, consectetur adipiscing elit, sed do', content: `Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellusVivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus` },
-        { img: g2, date: '15 Oct 2018', title: 'Protein plan', snippet: 'Lorem ipsum dolor adipiscing elit, sed do sit amet, consectetur adipiscing elit, sed do', content: 'Protein plan detailed text...' },
-        { img: g1, date: '15 Nov 2018', title: 'Cardio Fitness', snippet: 'Lorem ipsum dolor adipiscing elit, sed do sit amet, consectetur adipiscing elit, sed do', content: 'Cardio Fitness detailed text...' },
-        { img: g4, date: '15 Dec 2018', title: 'Body improve', snippet: 'Lorem ipsum dolor adipiscing elit, sed do sit amet, consectetur adipiscing elit, sed do', content: 'Body improve detailed text...' },
-        { img: g7, date: '15 Oct 2018', title: 'Build muscle', snippet: 'Lorem ipsum dolor adipiscing elit, sed do sit amet, consectetur adipiscing elit, sed do', content: 'Build muscle detailed text...' },
-        { img: g6, date: '15 Oct 2018', title: 'Level Up', snippet: 'Lorem ipsum dolor adipiscing elit, sed do sit amet, consectetur adipiscing elit, sed do', content: 'Level Up detailed text...' }
+        {
+            img: g6,
+            date: '28 Feb 2026',
+            title: 'Belt Exam Preparation Guide',
+            snippet: 'Prepare confidently for grading with a clear plan for technique, fitness, and mindset.',
+            content: `Belt exam success comes from consistency and focused revision. Break preparation into poomsae, fundamentals, sparring basics, terminology, and discipline habits. Weekly feedback from coaches and regular mock evaluations help students perform with confidence on grading day.`
+        },
+        {
+            img: g7,
+            date: '20 Feb 2026',
+            title: 'Power Training for Athletes',
+            snippet: 'Use smart strength work to improve explosive kicks, joint stability, and overall athletic power.',
+            content: `Power training for Taekwondo should improve speed and explosiveness, not just muscle size. Combine squats, lunges, plyometric drills, and controlled resistance training with proper recovery. This approach builds stronger kicks while protecting joints and reducing injury risk.`
+        },
+        {
+            img: g4,
+            date: '12 Feb 2026',
+            title: 'Core Strength & Balance',
+            snippet: 'Develop a stable core and posture for better kicks, stronger stances, and smoother movement.',
+            content: `Core strength is the center of Taekwondo control and balance. Add planks, stability drills, and bodyweight movements to support clean kicking mechanics and quick directional changes. A stronger core improves posture, reduces fatigue, and sharpens overall technique.`
+        },
+        {
+            img: g1,
+            date: '04 Feb 2026',
+            title: 'Sparring Endurance Basics',
+            snippet: 'Build stamina so your speed, timing, and focus stay strong in every sparring round.',
+            content: `Sparring endurance combines cardio fitness with technical efficiency. Include jump rope, interval rounds, and controlled high-tempo drills to improve recovery between bursts. Better stamina lets students maintain guard discipline, movement quality, and decision-making under pressure.`
+        },
+        {
+            img: g2,
+            date: '27 Jan 2026',
+            title: 'Nutrition for Students',
+            snippet: 'Fuel training sessions with balanced meals that support recovery, stamina, and healthy growth.',
+            content: `Good nutrition helps students train harder and recover faster. Focus on balanced meals with protein, complex carbohydrates, vegetables, fruits, and enough hydration throughout the day. Keep food choices simple, consistent, and age-appropriate for long-term performance and health.`
+        },
+        {
+            img: g8,
+            date: '18 Jan 2026',
+            title: 'Mobility for Higher Kicks',
+            snippet: 'Improve hip mobility and flexibility to kick higher with control, balance, and reduced injury risk.',
+            content: `Flexible hips and hamstrings are essential for fast, controlled Taekwondo kicks. Use dynamic warm-ups before class and static stretching after class to build range safely. Practicing 10 to 15 minutes daily creates steady improvement in kick height and technique quality.`
+        }
     ];
 
     const [modalPost, setModalPost] = React.useState(null);
@@ -88,7 +124,7 @@ export function Blog() {
                         </div>
                         <div className="col-md-6">
                             <div className="wthree-form-list">
-                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,delectus reiciendis maiores alias consequatur aut.maiores alias</h4>
+                                <h4>Get Taekwondo training tips, academy updates, belt exam guidance, and event announcements delivered to your inbox.</h4>
                             </div>
                         </div>
                     </div>
