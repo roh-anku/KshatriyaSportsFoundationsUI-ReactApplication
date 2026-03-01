@@ -1,10 +1,10 @@
 import './About.css';
 import { Link } from 'react-router-dom';
 import { ClientCarousel } from '../components/ClientCarousel.jsx';
-import t11 from '../images/t11.jpg';
-import t22 from '../images/t22.jpg';
-import t33 from '../images/t33.jpg';
-import t44 from '../images/t44.jpg';
+import t11 from '../images/instructor1-mayur.jpg';
+import t22 from '../images/instructor2-akshay.jpg';
+import t33 from '../images/placeholder-coming-soon.jpeg';
+import t44 from '../images/placeholder-coming-soon.jpeg';
 import t1 from '../images/t1.jpg';
 import t2 from '../images/t2.jpg';
 import t3 from '../images/t3.jpg';
@@ -35,7 +35,7 @@ export function About() {
                             <h4>Your Training With<br />Professional Coaches</h4>
                         </div>
                         <div className="abut-inner-left mt-lg-4 mt-md-3 mt-2">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                            <p>Welcome to Kshatriya Sports Foundations, where we believe Taekwondo is more than just a sport—it's a way of life. Founded on the principles of Courtesy, Integrity, Perseverance, Self-Control, and Indomitable Spirit, our dojang is a supportive community dedicated to helping students of all ages achieve their personal best. Whether you are seeking physical fitness, self-defense skills, or increased confidence, our expert instructors provide a safe and encouraging environment to help you grow stronger in both mind and body. Join us, and discover the champion within.</p>
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ export function About() {
                             <div className="using-icon-inner">
                                 <span className="fas fa-map-pin"></span>
                                 <div className="w3l-abt-sub-txt mt-lg-4 mt-3">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                    <p>A Korean martial art focusing on high, fast, and spinning kicks, alongside punches and defensive blocks</p>
                                     <h4 className="mt-3">Taekwondo Training</h4>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@ export function About() {
                             <div className="using-icon-inner">
                                 <span className="fas fa-undo"></span>
                                 <div className="w3l-abt-sub-txt mt-lg-4 mt-3">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                    <p>A standing, full-contact combat sport and martial art that combines boxing punches with kicking techniques, often incorporating knee strikes</p>
                                     <h4 className="mt-3">Kickboxing</h4>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@ export function About() {
                             <div className="using-icon-inner">
                                 <span className="fas fa-magic"></span>
                                 <div className="w3l-abt-sub-txt mt-lg-4 mt-3">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                    <p>A training program designed to teach practical techniques, mental strategies, and situational awareness to protect oneself from physical harm or danger</p>
                                     <h4 className="mt-3">Self Defense Course</h4>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ export function About() {
                             <div className="using-icon-inner">
                                 <span className="fas fa-map-pin"></span>
                                 <div className="w3l-abt-sub-txt mt-lg-4 mt-3">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                    <p>A structured ranking system, usually ranging from 10th Gup (white belt) to 1st Dan (black belt), that measures a practitioner's progress in skill, knowledge, and character</p>
                                     <h4 className="mt-3">Belt Gradation</h4>
                                 </div>
                             </div>
@@ -102,8 +102,8 @@ export function About() {
                                     </a>
                                 </div>
                                 <div className="team-content text-center">
-                                    <h4>Poonam Khillari</h4>
-                                    <span className="pt-2">FITNESS INSTRUCTOR</span>
+                                    <h4>Mayur Aadak</h4>
+                                    <span className="pt-2">BODY BUILDER</span>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +122,7 @@ export function About() {
                                 </div>
                                 <div className="team-content text-center">
                                     <h4>Akshay Khillari</h4>
-                                    <span className="pt-2">BODYBUILDER</span>
+                                    <span className="pt-2">TAEKWONDO TRAINER</span>
                                 </div>
                             </div>
                         </div>
@@ -140,8 +140,8 @@ export function About() {
                                     </a>
                                 </div>
                                 <div className="team-content text-center">
-                                    <h4>Mayur Bhaiya</h4>
-                                    <span className="pt-2">BODYBUILDER</span>
+                                    <h4>Placeholder</h4>
+                                    <span className="pt-2">TAEKWONDO TRAINER</span>
                                 </div>
                             </div>
                         </div>
@@ -159,8 +159,8 @@ export function About() {
                                     </a>
                                 </div>
                                 <div className="team-content text-center">
-                                    <h4>Poonam Khilari 2</h4>
-                                    <span className="pt-2 ">YOGA INSTRUCTOR</span>
+                                    <h4>Placeholder</h4>
+                                    <span className="pt-2 ">TAEKWONDO TRAINER</span>
                                 </div>
                             </div>
                             {/* /.team-block */}
@@ -170,7 +170,7 @@ export function About() {
             </section>
             {/*//team */}
             {/*testimonial*/}
-            <section className="testimonial py-lg-4 py-md-3 py-sm-3 py-3">
+            <section style={{display:"none"}} className="testimonial py-lg-4 py-md-3 py-sm-3 py-3">
                 <div className="container py-lg-5 py-md-5 py-sm-4 py-3">
                     <h3 className="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Our Clients</h3>
                     {/* using shared React carousel component */}

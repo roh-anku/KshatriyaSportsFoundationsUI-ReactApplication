@@ -5,7 +5,7 @@ import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import './css/style.css';
-import './css/fontawesome-all.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './css/uncover.css';
 import {Provider} from 'react-redux';
 import {store} from './store/store.js';
