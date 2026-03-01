@@ -140,7 +140,19 @@ export function AdminStudentDetails() {
 
         const raw = String(str).trim();
 
-        if (raw.includes('T') || /^\d{4}-\d{2}-\d{2}/.test(raw)) {
+        const yyyyMmDdMatch = raw.match(/^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2})(?::(\d{2}))?)?/);
+        if (yyyyMmDdMatch) {
+            const [, y, m, d, hh = '00', min = '00', sec = '00'] = yyyyMmDdMatch;
+            return new Date(Number(y), Number(m) - 1, Number(d), Number(hh), Number(min), Number(sec));
+        }
+
+        const ddMmYyyyMatch = raw.match(/^(\d{2})-(\d{2})-(\d{4})(?:[ T](\d{2}):(\d{2})(?::(\d{2}))?)?/);
+        if (ddMmYyyyMatch) {
+            const [, d, m, y, hh = '00', min = '00', sec = '00'] = ddMmYyyyMatch;
+            return new Date(Number(y), Number(m) - 1, Number(d), Number(hh), Number(min), Number(sec));
+        }
+
+        if (raw.includes('T')) {
             return new Date(raw);
         }
 
@@ -168,33 +180,40 @@ export function AdminStudentDetails() {
         let ok = true;
         const today = new Date();
         const regDate = parseDate(student.registrationDate);
+        const isValidRegDate = !Number.isNaN(regDate.getTime());
+
+        const startOfToday = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+        const startOfTomorrow = new Date(startOfToday);
+        startOfTomorrow.setDate(startOfTomorrow.getDate() + 1);
+        const startOfYesterday = new Date(startOfToday);
+        startOfYesterday.setDate(startOfYesterday.getDate() - 1);
 
         if (search) {
             const s = search.toLowerCase();
             ok = student.Email.toLowerCase().includes(s) || student.Phone.includes(s);
         }
         if (ok && filter !== 'All') {
-            const diffDays = Math.floor((today - regDate) / (1000 * 60 * 60 * 24));
+            if (!isValidRegDate) return false;
+
+            const diffDays = Math.floor((startOfToday - new Date(regDate.getFullYear(), regDate.getMonth(), regDate.getDate())) / (1000 * 60 * 60 * 24));
             switch (filter) {
                 case 'today':
-                    ok = regDate.toDateString() === today.toDateString();
+                    ok = regDate >= startOfToday && regDate < startOfTomorrow;
                     break;
                 case 'yesterday':
-                    const yesterday = new Date(today);
-                    yesterday.setDate(today.getDate() - 1);
-                    ok = regDate.toDateString() === yesterday.toDateString();
+                    ok = regDate >= startOfYesterday && regDate < startOfToday;
                     break;
                 case '7days':
-                    ok = diffDays < 7;
+                    ok = diffDays >= 0 && diffDays < 7;
                     break;
                 case '1month':
-                    ok = diffDays < 30;
+                    ok = diffDays >= 0 && diffDays < 30;
                     break;
                 case '6months':
-                    ok = diffDays < 183;
+                    ok = diffDays >= 0 && diffDays < 183;
                     break;
                 case '1year':
-                    ok = diffDays < 365;
+                    ok = diffDays >= 0 && diffDays < 365;
                     break;
                 default:
                     break;
