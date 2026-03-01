@@ -117,7 +117,7 @@ export function AdminLogin() {
             )}
             <div className="logo-bar">
                 <Link to="/" className="logo-link" aria-label="Go to home">
-                    Go to home
+                     Go to home
                 </Link>
             </div>
             <div className="login-wrap">
