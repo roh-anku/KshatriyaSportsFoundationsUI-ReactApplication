@@ -19,7 +19,7 @@ export function AdminLogin() {
     const [loginLoader, setLoginLoader] = React.useState({
         isVisible: false,
         status: 'loading',
-        message: 'Signing you in...'
+        message: 'Authenticating...'
     });
 
     const delay = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
