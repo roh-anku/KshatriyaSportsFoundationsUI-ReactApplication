@@ -10,7 +10,7 @@ export function Footer() {
                         <div className="col-lg-4 col-md-4 col-sm-12 wthree-left-right">
                             <h4>About</h4>
                             <div className="abt-footer">
-                                <p>"[Kshatriya Sports Foundations] is a family-friendly martial arts academy committed to building leadership, discipline, and confidence in children and adults alike. We believe that 'The Family that Kicks Together, Sticks Together.' Our tailored programs for children focus on improving focus and respect and practical self-defense."</p>
+                                <p>"Kshatriya Sports Foundations, is a family-friendly martial arts academy committed to building leadership, discipline, and confidence in children and adults alike. We believe that 'The Family that Kicks Together, Sticks Together.' Our tailored programs for children focus on improving focus and respect and practical self-defense."</p>
                                 <h5><Link to="/Home/About" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Read more..</Link></h5>
                             </div>                            
                         </div>
