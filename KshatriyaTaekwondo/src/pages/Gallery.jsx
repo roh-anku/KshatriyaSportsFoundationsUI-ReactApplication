@@ -45,7 +45,7 @@ export function Gallery() {
                                 <img src={g1} alt="" className="img-fluid" />
                                 <figcaption>
                                     <h4>AK<span><br />Sports</span></h4>
-                                    <p>Lorem ipsum dolor</p>
+                                    <p>Coming soon..</p>
                                     <a href={g1} className="gallery-box" data-lightbox="example-set" data-title="">
                                     </a>
                                 </figcaption>
@@ -56,7 +56,7 @@ export function Gallery() {
                                 <img src={g2} alt="" className="img-fluid" />
                                 <figcaption>
                                     <h4>AK<span><br />Sports</span></h4>
-                                    <p>Lorem ipsum dolor</p>
+                                    <p>Coming soon..</p>
                                     <a href={g2} className="gallery-box" data-lightbox="example-set" data-title="">
                                     </a>
                                 </figcaption>
@@ -67,7 +67,7 @@ export function Gallery() {
                                 <img src={g3} alt="" className="img-fluid" />
                                 <figcaption>
                                     <h4>AK<span><br />Sports</span></h4>
-                                    <p>Lorem ipsum dolor</p>
+                                    <p>Coming soon..</p>
                                     <a href={g3} className="gallery-box" data-lightbox="example-set" data-title="">
                                     </a>
                                 </figcaption>
@@ -80,7 +80,7 @@ export function Gallery() {
                                 <img src={g3} alt="" className="img-fluid" />
                                 <figcaption>
                                     <h4>AK<span><br />Sports</span></h4>
-                                    <p>Lorem ipsum dolor</p>
+                                    <p>Coming soon..</p>
                                     <a href={g3} className="gallery-box" data-lightbox="example-set" data-title="">
                                     </a>
                                 </figcaption>
@@ -91,7 +91,7 @@ export function Gallery() {
                                 <img src={g4} alt="" className="img-fluid" />
                                 <figcaption>
                                     <h4>AK<span><br />Sports</span></h4>
-                                    <p>Lorem ipsum dolor</p>
+                                    <p>Coming soon..</p>
                                     <a href={g4} className="gallery-box" data-lightbox="example-set" data-title="">
                                     </a>
                                 </figcaption>
@@ -102,7 +102,7 @@ export function Gallery() {
                                 <img src={g5} alt="" className="img-fluid" />
                                 <figcaption>
                                     <h4>AK<span><br />Sports</span></h4>
-                                    <p>Lorem ipsum dolor</p>
+                                    <p>Coming soon..</p>
                                     <a href={g5} className="gallery-box" data-lightbox="example-set" data-title="">
                                     </a>
                                 </figcaption>
@@ -124,7 +124,7 @@ export function Gallery() {
                             </div>
                             <div className="gallery-video-caption">
                                 <h4>AK<span>Sports</span></h4>
-                                <p>Lorem ipsum dolor</p>
+                                <p>Coming soon..</p>
                                 <br/><br/>
                             </div>
                         </div>
@@ -142,7 +142,7 @@ export function Gallery() {
                             </div>
                             <div className="gallery-video-caption">
                                 <h4>AK<span>Sports</span></h4>
-                                <p>Lorem ipsum dolor</p>
+                                <p>Coming soon..</p>
                                 <br/><br/>
                             </div>
                         </div>
@@ -160,7 +160,7 @@ export function Gallery() {
                             </div>
                             <div className="gallery-video-caption">
                                 <h4>AK<span>Sports</span></h4>
-                                <p>Lorem ipsum dolor</p>
+                                <p>Coming soon..</p>
                                 <br/><br/>
                             </div>
                         </div>
@@ -180,7 +180,7 @@ export function Gallery() {
                             </div>
                             <div className="gallery-video-caption">
                                 <h4>AK<span>Sports</span></h4>
-                                <p>Lorem ipsum dolor</p>
+                                <p>Coming soon..</p>
                                 <br/><br/>
                             </div>
                         </div>
@@ -198,7 +198,7 @@ export function Gallery() {
                             </div>
                             <div className="gallery-video-caption">
                                 <h4>AK<span>Sports</span></h4>
-                                <p>Lorem ipsum dolor</p>
+                                <p>Coming soon..</p>
                                 <br/><br/>
                             </div>
                         </div>
@@ -216,7 +216,7 @@ export function Gallery() {
                             </div>
                             <div className="gallery-video-caption">
                                 <h4>AK<span>Sports</span></h4>
-                                <p>Lorem ipsum dolor</p>
+                                <p>Coming soon..</p>
                                 <br/><br/>
                             </div>
                         </div>
@@ -240,7 +240,7 @@ export function Gallery() {
                         </div>
                         <div className="col-md-6">
                             <div className="wthree-form-list">
-                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,delectus reiciendis maiores alias consequatur aut.maiores alias</h4>
+                                <h4>Coming soon..</h4>
                             </div>
                         </div>
                     </div>
