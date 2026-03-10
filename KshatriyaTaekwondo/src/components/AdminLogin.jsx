@@ -47,7 +47,7 @@ export function AdminLogin() {
         setLoginLoader({
             isVisible: true,
             status: 'loading',
-            message: 'Signing you in...'
+            message: 'Authenticating...'
         });
         await delay(LOGIN_LOADER_DELAY_MS)
         try {
