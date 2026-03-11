@@ -69,3 +69,54 @@
 		transform: rotate(360deg);
 	}
 }
+
+.contact-location-select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 100%;
+	height: auto;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #000;
+	padding: 0.8em 2.2em 0.8em 0.8em;
+	border: none;
+	border-radius: 0;
+	border-bottom: 2px solid #fe625b;
+	background-color: #eaeaea;
+	background-image: linear-gradient(45deg, transparent 50%, #0f172a 50%), linear-gradient(135deg, #0f172a 50%, transparent 50%);
+	background-position: calc(100% - 18px) calc(50% - 3px), calc(100% - 12px) calc(50% - 3px);
+	background-size: 6px 6px, 6px 6px;
+	background-repeat: no-repeat;
+	outline: none !important;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.contact-location-select:focus {
+	background-color: #eaeaea;
+	border-bottom-color: #fe625b;
+	box-shadow: none;
+}
+
+.contact-location-select.is-invalid {
+	border-bottom-color: #dc3545;
+}
+
+.contact-location-select option[value=""] {
+	color: #6c757d;
+}
+
+.contact-map-placeholder {
+	min-height: 320px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
+	text-align: center;
+	font-weight: 600;
+	color: #2b2b2b;
+	background: #f6f7f9;
+	border: 1px solid #d8dbe2;
+	border-radius: 4px;
+}

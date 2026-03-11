@@ -5,7 +5,7 @@ export async function SendEnquiry(enquiryRequstDto)
     let response;
 
     try {
-        response = await fetch(ServerAPIUrl+"api/contact/SendEnquiry",{
+        response = await fetch("https://localhost:7002/"+"api/contact/SendEnquiry",{
             method:"POST",
             body:JSON.stringify(enquiryRequstDto),
             headers:{

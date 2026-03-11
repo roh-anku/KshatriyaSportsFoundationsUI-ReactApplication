@@ -1,10 +1,40 @@
+.gallery .gallery-grids {
+	transition: transform 0.25s ease;
+}
+
+.gallery .gallery-grids:hover {
+	transform: translateY(-4px);
+}
+
+.gallery .gallery-grids figure.effect-moses {
+	border-radius: 8px;
+	overflow: hidden;
+	background: #ffffff;
+	transition: box-shadow 0.25s ease;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.gallery .gallery-grids:hover figure.effect-moses {
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.gallery .gallery-grids figure.effect-moses img {
+	border-radius: 8px 8px 0 0;
+}
+
+.gallery .gallery-grids figure.effect-moses figcaption {
+	background: #ffffff;
+	border-radius: 0 0 8px 8px;
+}
+
 .gallery-video-card {
 	position: relative;
 	width: 100%;
 	aspect-ratio: 16 / 9;
 	overflow: hidden;
-	border-radius: 3px;
+	border-radius: 8px 8px 0 0;
 	background: #000;
+	transition: box-shadow 0.25s ease;
 }
 
 .gallery-video {
@@ -16,8 +46,17 @@
 
 .gallery-video-caption {
 	text-align: center;
+	background: #ffffff;
+	border-radius: 0 0 8px 8px;
+	transition: box-shadow 0.25s ease;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 	padding-top: 6px;
-	padding-bottom: 0;
+	padding-bottom: 8px;
+}
+
+.gallery .gallery-grids:hover .gallery-video-card,
+.gallery .gallery-grids:hover .gallery-video-caption {
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .gallery-video-caption h4 {
