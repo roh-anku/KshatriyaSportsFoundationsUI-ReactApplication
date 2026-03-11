@@ -432,6 +432,8 @@ export function Home() {
                                             <li>Discipline & confidence building</li>
                                             <li>Belt promotion eligibility</li>
                                         </ul>
+                                        <br></br>
+                                        <br></br>
                                     </div>
                                     <div className="buy-buttn ">
                                         <Link className="w3_play_icon1 scroll" to="/Home/Contact"> Book Free Session</Link>
