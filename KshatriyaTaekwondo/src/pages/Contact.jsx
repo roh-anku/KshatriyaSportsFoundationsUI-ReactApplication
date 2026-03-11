@@ -286,7 +286,7 @@ export function Contact() {
                                                 disabled={isSubmittingEnquiry}
                                                 aria-invalid={contactSubmitted && contactErrors.location ? 'true' : 'false'}
                                             >
-                                                <option value="">Select a Location</option>
+                                                <option value="">--Select a Location--</option>
                                                 {LOCATION_OPTIONS.map((option) => (
                                                     <option key={option.label} value={option.label}>{option.label}</option>
                                                 ))}
