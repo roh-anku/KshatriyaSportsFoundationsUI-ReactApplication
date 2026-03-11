@@ -69,8 +69,8 @@ export function About() {
                                 <span className="fas fa-magic"></span>
                                 <div className="w3l-abt-sub-txt mt-lg-4 mt-3">
                                     <p>A training program designed to teach practical techniques, mental strategies, and situational awareness to protect oneself from physical harm or danger</p>
-                                    <br/>
                                     <h4 className="mt-3">Self Defense Course</h4>
+                                    <br></br>
                                 </div>
                             </div>
                         </div>

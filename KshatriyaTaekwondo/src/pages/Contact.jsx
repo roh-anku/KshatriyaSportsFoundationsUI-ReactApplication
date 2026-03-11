@@ -209,8 +209,12 @@ export function Contact() {
                                     <div className="contact_footer_grid_left text-center mb-3">
                                         <h5>Phone</h5>
                                     </div>
-                                    <p>+(91) 9130330506 (Akshay Sir)<br />+(91) 8149200719 (Poonam Ma'am)</p>
-                                    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                                    <p>+(91) 9130330506 (Akshay Sir)<br />
+                                        +(91) 7721086572 (Swapnil Miraje Sir)<br/>
+                                        +(91) 7588026388 (Vinod Torat Sir)<br/>
+                                        +(91) 8149200719 (Poonam Ma'am)<br/>
+                                    </p>
+                                    <br/><br/><br/><br/><br/><br/><br/>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-4 text-center contact-address-grid">
@@ -218,8 +222,8 @@ export function Contact() {
                                     <div className="contact_footer_grid_left text-center mb-3">
                                         <h5>Email</h5>
                                     </div>
-                                    <p><a href="mailto:akshaykhillari75@gmail.com">akshaykhillari75@gmail.com</a> <br /><a href="mailto:poonam.alan@gmail.com">poonam.alan@gmail.com</a></p>
-                                    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                                    <p><a href="mailto:kshatriyasportsfoundation@gmail.com">kshatriyasportsfoundation@gmail.com</a> <br /><a href="mailto:akshaykhillari75@gmail.com">akshaykhillari75@gmail.com</a> <br /><a href="mailto:Taegeuktaekwondoacademy@gmail.com">taegeuktaekwondoacademy@gmail.com</a><br/><a href="mailto:poonam.alan@gmail.com">poonam.alan@gmail.com</a></p>
+                                    <br/><br/><br/><br/><br/><br/><br/>
                                 </div>
                             </div>
                         </div>
