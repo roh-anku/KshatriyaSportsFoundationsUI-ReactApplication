@@ -1,8 +1,8 @@
 import './About.css';
 import { Link } from 'react-router-dom';
 import { ClientCarousel } from '../components/ClientCarousel.jsx';
-import t11 from '../images/instructor1-mayur.jpg';
-import t22 from '../images/instructor2-akshay.jpg';
+import t11 from '../images/instructor1-akshay-khillari.jpg';
+import t22 from '../images/placeholder-coming-soon.jpeg';
 import t33 from '../images/placeholder-coming-soon.jpeg';
 import t44 from '../images/placeholder-coming-soon.jpeg';
 import t1 from '../images/t1.jpg';
@@ -49,6 +49,7 @@ export function About() {
                                 <span className="fas fa-map-pin"></span>
                                 <div className="w3l-abt-sub-txt mt-lg-4 mt-3">
                                     <p>A Korean martial art focusing on high, fast, and spinning kicks, alongside punches and defensive blocks</p>
+                                    <br/><br/>
                                     <h4 className="mt-3">Taekwondo Training</h4>
                                 </div>
                             </div>
@@ -58,6 +59,7 @@ export function About() {
                                 <span className="fas fa-undo"></span>
                                 <div className="w3l-abt-sub-txt mt-lg-4 mt-3">
                                     <p>A standing, full-contact combat sport and martial art that combines boxing punches with kicking techniques, often incorporating knee strikes</p>
+                                    <br/>
                                     <h4 className="mt-3">Kickboxing</h4>
                                 </div>
                             </div>
@@ -67,6 +69,7 @@ export function About() {
                                 <span className="fas fa-magic"></span>
                                 <div className="w3l-abt-sub-txt mt-lg-4 mt-3">
                                     <p>A training program designed to teach practical techniques, mental strategies, and situational awareness to protect oneself from physical harm or danger</p>
+                                    <br/>
                                     <h4 className="mt-3">Self Defense Course</h4>
                                 </div>
                             </div>
@@ -97,13 +100,13 @@ export function About() {
                                             <a href="#" className="social-icon-box"><span className="fab fa-facebook-f"></span></a><br />
                                             <a href="#" className="social-icon-box"><span className="fab fa-twitter"></span></a><br />
                                             <a href="#" className="social-icon-box"><span className="fab fa-google-plus-g"></span></a><br />
-                                            <a href="#" className="social-icon-box"><span className="fab fa-pinterest-p"></span></a>
+                                            <a href="#" className="social-icon-box"><span className="fab fa-instagram"></span></a>
                                         </div>
                                     </a>
                                 </div>
                                 <div className="team-content text-center">
-                                    <h4>Mayur Aadak</h4>
-                                    <span className="pt-2">BODY BUILDER</span>
+                                    <h4>Akshay Khillari - sir</h4>
+                                    <span className="pt-2">Kukiwon 2nd Dan Black Belt</span>
                                 </div>
                             </div>
                         </div>
@@ -116,13 +119,13 @@ export function About() {
                                             <a href="#" className="social-icon-box"><span className="fab fa-facebook-f"></span></a><br />
                                             <a href="#" className="social-icon-box"><span className="fab fa-twitter"></span></a><br />
                                             <a href="#" className="social-icon-box"><span className="fab fa-google-plus-g"></span></a><br />
-                                            <a href="#" className="social-icon-box"><span className="fab fa-pinterest-p"></span></a>
+                                            <a href="#" className="social-icon-box"><span className="fab fa-instagram"></span></a>
                                         </div>
                                     </a>
                                 </div>
                                 <div className="team-content text-center">
-                                    <h4>Akshay Khillari</h4>
-                                    <span className="pt-2">TAEKWONDO TRAINER</span>
+                                    <h4>Swapnil Miraje - sir</h4>
+                                    <span className="pt-2">Kukiwon 3nd Dan Black Belt</span>
                                 </div>
                             </div>
                         </div>
@@ -135,13 +138,13 @@ export function About() {
                                             <a href="#" className="social-icon-box"><span className="fab fa-facebook-f"></span></a><br />
                                             <a href="#" className="social-icon-box"><span className="fab fa-twitter"></span></a><br />
                                             <a href="#" className="social-icon-box"><span className="fab fa-google-plus-g"></span></a><br />
-                                            <a href="#" className="social-icon-box"><span className="fab fa-pinterest-p"></span></a>
+                                            <a href="#" className="social-icon-box"><span className="fab fa-instagram"></span></a>
                                         </div>
                                     </a>
                                 </div>
                                 <div className="team-content text-center">
-                                    <h4>Placeholder</h4>
-                                    <span className="pt-2">TAEKWONDO TRAINER</span>
+                                    <h4>Vinod Torat - sir</h4>
+                                    <span className="pt-2">Kukiwon 2nd Dan Black Belt</span>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +157,7 @@ export function About() {
                                             <a href="#" className="social-icon-box"><span className="fab fa-facebook-f"></span></a><br />
                                             <a href="#" className="social-icon-box"><span className="fab fa-twitter"></span></a><br />
                                             <a href="#" className="social-icon-box"><span className="fab fa-google-plus-g"></span></a><br />
-                                            <a href="#" className="social-icon-box"><span className="fab fa-pinterest-p"></span></a>
+                                            <a href="#" className="social-icon-box"><span className="fab fa-instagram"></span></a>
                                         </div>
                                     </a>
                                 </div>

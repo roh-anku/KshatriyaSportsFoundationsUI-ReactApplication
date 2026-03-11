@@ -7,11 +7,23 @@ import { EnquiryModel } from '../models/ContactDto.js';
 export function Contact() {
     const ENQUIRY_LOADER_SUCCESS_DELAY_MS = 4000;
     const ENQUIRY_LOADER_ERROR_DELAY_MS = 5000;
+    const LOCATION_OPTIONS = [
+        {
+            label: 'CHAMPIONZ SPORTS ARENA - LAGAD MALA',
+            mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4011176214412!2d73.8079504!3d18.465481399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2953deaaff899%3A0x5739901600265f00!2sCHAMPIONZ%20SPORTS%20ARENA%20-%20LAGAD%20MALA!5e0!3m2!1sen!2sin!4v1773212211703!5m2!1sen!2sin'
+        },
+        {
+            label: 'TAEGEUK TAEKWONDO ACADEMY',
+            mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.796142316689!2d73.7809304!3d18.5832272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9a7d42b0c83%3A0xb60b6463a277c6fb!2sTAEGEUK%20TAEKWONDO%20ACADEMY!5e0!3m2!1sen!2sin!4v1773212220520!5m2!1sen!2sin'
+        }
+    ];
+    const DEFAULT_LOCATION = '';
 
     const [contactForm, setContactForm] = React.useState({
         name: '',
         email: '',
         phone: '',
+        location: DEFAULT_LOCATION,
         message: '',
     });
     const [contactErrors, setContactErrors] = React.useState({});
@@ -49,6 +61,10 @@ export function Contact() {
             errors.email = 'Email is required';
         } else if (!isValidEmail(contactForm.email)) {
             errors.email = 'Invalid email address';
+        }
+
+        if (!contactForm.location.trim()) {
+            errors.location = 'Location is required';
         }
 
         return errors;
@@ -90,7 +106,13 @@ export function Contact() {
         });
 
         try {
-            const enquiryRequestDto = new EnquiryModel(contactForm.name, contactForm.email, contactForm.phone, contactForm.message);
+            const enquiryRequestDto = new EnquiryModel(
+                contactForm.name,
+                contactForm.email,
+                contactForm.phone,
+                contactForm.location,
+                contactForm.message
+            );
             const response = await SendEnquiry(enquiryRequestDto);
 
             setEnquiryLoader({
@@ -99,7 +121,7 @@ export function Contact() {
                 message: response.message || 'Enquiry sent successfully.'
             });
 
-            setContactForm({ name: '', email: '', phone: '', message: '' });
+            setContactForm({ name: '', email: '', phone: '', location: DEFAULT_LOCATION, message: '' });
             setContactErrors({});
             setContactSubmitted(false);
             await delay(ENQUIRY_LOADER_SUCCESS_DELAY_MS);
@@ -133,6 +155,8 @@ export function Contact() {
         setSubscribeErrors({});
         setSubscribeSubmitted(false);
     };
+
+    const selectedLocation = LOCATION_OPTIONS.find((option) => option.label === contactForm.location);
 
     return (
         <>
@@ -175,7 +199,9 @@ export function Contact() {
                                     <div className="contact_footer_grid_left text-center mb-3">
                                         <h5> Address</h5>
                                     </div>
-                                    <p>Coming soon..<br />Pune-411051, India</p>
+                                    <p><b>1 - CHAMPIONZ SPORTS ARENA - LAGAD MALA</b> (Preja Pearl Road , Behind Serene & Cross County , Lagad Mala Dhotre Farm, Vadgaon Khurd, Pune, Maharashtra 411041)</p>
+                                    <br/>
+                                    <p><b>2 - TAEGEUK TAEKWONDO ACADEMY</b> (Laxmibai Nandgude School, New DP Rd, Vishal Nagar, Pimple Nilakh, Pune, Pimpri-Chinchwad, Maharashtra 411027)</p>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-4 text-center contact-address-grid">
@@ -184,6 +210,7 @@ export function Contact() {
                                         <h5>Phone</h5>
                                     </div>
                                     <p>+(91) 9130330506 (Akshay Sir)<br />+(91) 8149200719 (Poonam Ma'am)</p>
+                                    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-4 text-center contact-address-grid">
@@ -192,6 +219,7 @@ export function Contact() {
                                         <h5>Email</h5>
                                     </div>
                                     <p><a href="mailto:akshaykhillari75@gmail.com">akshaykhillari75@gmail.com</a> <br /><a href="mailto:poonam.alan@gmail.com">poonam.alan@gmail.com</a></p>
+                                    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
                                 </div>
                             </div>
                         </div>
@@ -249,9 +277,24 @@ export function Contact() {
                                                 <div className="invalid-feedback">{contactErrors.phone}</div>
                                             )}
                                         </div>
-                                        {/* <div className="col-lg-6 col-md-6 form-group contact-forms">
-                                            <input type="text" className="form-control" placeholder="subjecct" />
-                                        </div> */}
+                                        <div className="col-lg-6 col-md-6 form-group contact-forms">
+                                            <select
+                                                name="location"
+                                                className={`form-control contact-location-select ${contactSubmitted && contactErrors.location ? 'is-invalid' : ''}`}
+                                                value={contactForm.location}
+                                                onChange={handleContactChange}
+                                                disabled={isSubmittingEnquiry}
+                                                aria-invalid={contactSubmitted && contactErrors.location ? 'true' : 'false'}
+                                            >
+                                                <option value="">Select a Location</option>
+                                                {LOCATION_OPTIONS.map((option) => (
+                                                    <option key={option.label} value={option.label}>{option.label}</option>
+                                                ))}
+                                            </select>
+                                            {contactSubmitted && contactErrors.location && (
+                                                <div className="invalid-feedback">{contactErrors.location}</div>
+                                            )}
+                                        </div>
                                     </div>
                                     <div className="form-group contact-forms">
                                         <textarea
@@ -269,7 +312,17 @@ export function Contact() {
                                 </form>
                             </div>
                             <div className="col-lg-6 address_mail_footer_grids">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.0684903822503!2d73.82543967519075!3d18.48055658260528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29558701ee9c1%3A0xd7c45c5919f6b297!2sNityanand%20hall%2C%20Vitthalwadi%2C%20Hingne%20Khurd%2C%20Pune%2C%20Maharashtra%20411051!5e0!3m2!1sen!2sin!4v1772386275629!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                          
+                                {selectedLocation ? (
+                                    <iframe
+                                        title={selectedLocation.label}
+                                        src={selectedLocation.mapUrl}
+                                        allowFullScreen
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
+                                    ></iframe>
+                                ) : (
+                                    <div className="contact-map-placeholder">Select a location to view map</div>
+                                )}
                             </div>
                         </div>
                     </div>

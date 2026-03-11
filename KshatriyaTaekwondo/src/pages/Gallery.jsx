@@ -1,22 +1,24 @@
 import './Gallery.css';
 import { Link } from 'react-router-dom';
-import g1 from '../images/g1.jpg';
-import g2 from '../images/g2.jpg';
-import g3 from '../images/g3.jpg';
-import g4 from '../images/g4.jpg';
-import g5 from '../images/g5.jpg';
-import g6 from '../images/g6.jpg';
-import g7 from '../images/g7.jpg';
-import g8 from '../images/g8.jpg';
+import g1 from '../images/gallery1.jpg';
+import g2 from '../images/gallery2.jpg';
+import g3 from '../images/gallery3.jpg';
+import g4 from '../images/gallery4.jpg';
+import g5 from '../images/gallery5.jpg';
+import g6 from '../images/gallery6.jpg';
+import g7 from '../images/gallery7.jpg';
+import g8 from '../images/gallery8.jpg';
+import g9 from '../images/gallery9.jpg';
+
 
 export function Gallery() {
-    const youtubeVideoLinks = [
-        'https://www.youtube.com/embed/cz7cctS3eHQ',
-        'https://www.youtube.com/embed/rDPN-ML5wKQ',
-        'https://www.youtube.com/embed/-34FiqwkQ9I',
-        'https://www.youtube.com/embed/e64AtWekQVo',
-        'https://www.youtube.com/embed/bfBubv0mYgU',
-        'https://www.youtube.com/embed/3ymdFmJAzOE'
+    const youtubeVideoLinks = [        
+        'https://www.youtube.com/embed/wbBJ2POaTQo',
+        'https://www.youtube.com/embed/6ubqud4Gxt0',
+        'https://www.youtube.com/embed/Gao-F_gwZy0',
+        'https://www.youtube.com/embed/RhOISheB9IA',
+        'https://www.youtube.com/embed/pw41sySgebs',
+        'https://www.youtube.com/embed/kgf_p2FHyak'
     ];
 
     return (
@@ -44,8 +46,8 @@ export function Gallery() {
                             <figure className="effect-moses">
                                 <img src={g1} alt="" className="img-fluid" />
                                 <figcaption>
-                                    <h4>AK<span><br />Sports</span></h4>
-                                    <p>Coming soon..</p>
+                                    <h4>AK Sports Academy</h4>
+                                    <p>(Rajguru nagar)</p>
                                     <a href={g1} className="gallery-box" data-lightbox="example-set" data-title="">
                                     </a>
                                 </figcaption>
@@ -55,8 +57,8 @@ export function Gallery() {
                             <figure className="effect-moses">
                                 <img src={g2} alt="" className="img-fluid" />
                                 <figcaption>
-                                    <h4>AK<span><br />Sports</span></h4>
-                                    <p>Coming soon..</p>
+                                    <h4>AK Sports Academy</h4>
+                                    <p>(Rajguru nagar)</p>
                                     <a href={g2} className="gallery-box" data-lightbox="example-set" data-title="">
                                     </a>
                                 </figcaption>
@@ -66,8 +68,8 @@ export function Gallery() {
                             <figure className="effect-moses">
                                 <img src={g3} alt="" className="img-fluid" />
                                 <figcaption>
-                                    <h4>AK<span><br />Sports</span></h4>
-                                    <p>Coming soon..</p>
+                                   <h4>AK Sports Academy</h4>
+                                    <p>(Rajguru nagar)</p>
                                     <a href={g3} className="gallery-box" data-lightbox="example-set" data-title="">
                                     </a>
                                 </figcaption>
@@ -77,21 +79,10 @@ export function Gallery() {
                     <div className="row grid gallery-info my-lg-4 my-md-3">
                         <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
                             <figure className="effect-moses">
-                                <img src={g3} alt="" className="img-fluid" />
-                                <figcaption>
-                                    <h4>AK<span><br />Sports</span></h4>
-                                    <p>Coming soon..</p>
-                                    <a href={g3} className="gallery-box" data-lightbox="example-set" data-title="">
-                                    </a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
-                            <figure className="effect-moses">
                                 <img src={g4} alt="" className="img-fluid" />
                                 <figcaption>
-                                    <h4>AK<span><br />Sports</span></h4>
-                                    <p>Coming soon..</p>
+                                    <h4>AK Sports Academy</h4>
+                                    <p>(Rajguru nagar)</p>
                                     <a href={g4} className="gallery-box" data-lightbox="example-set" data-title="">
                                     </a>
                                 </figcaption>
@@ -101,9 +92,55 @@ export function Gallery() {
                             <figure className="effect-moses">
                                 <img src={g5} alt="" className="img-fluid" />
                                 <figcaption>
-                                    <h4>AK<span><br />Sports</span></h4>
-                                    <p>Coming soon..</p>
+                                    <h4>AK Sports Academy</h4>
+                                    <p>(Rajguru nagar)</p>
                                     <a href={g5} className="gallery-box" data-lightbox="example-set" data-title="">
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
+                            <figure className="effect-moses">
+                                <img src={g6} alt="" className="img-fluid" />
+                                <figcaption>
+                                    <h4>AK Sports Academy</h4>
+                                    <p>(Rajguru nagar)</p>
+                                    <a href={g6} className="gallery-box" data-lightbox="example-set" data-title="">
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div className="row grid gallery-info my-lg-4 my-md-3">
+                        <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
+                            <figure className="effect-moses">
+                                <img src={g7} alt="" className="img-fluid" />
+                                <figcaption>
+                                    <h4>AK Sports Academy</h4>
+                                    <p>(Students outing - at Visapur Fort)</p>
+                                    <a href={g7} className="gallery-box" data-lightbox="example-set" data-title="">
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
+                            <figure className="effect-moses">
+                                <img src={g8} alt="" className="img-fluid" />
+                                <figcaption>
+                                    <h4>AK Sports Academy</h4>
+                                    <p>(Students outing - at Visapur Fort)</p>
+                                    <a href={g8} className="gallery-box" data-lightbox="example-set" data-title="">
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
+                            <figure className="effect-moses">
+                                <img src={g9} alt="" className="img-fluid" />
+                                <figcaption>
+                                    <h4>AK Sports Academy</h4>
+                                    <p>(Students outing - at Visapur Fort)</p>
+                                    <a href={g9} className="gallery-box" data-lightbox="example-set" data-title="">
                                     </a>
                                 </figcaption>
                             </figure>
@@ -123,9 +160,9 @@ export function Gallery() {
                                 ></iframe>
                             </div>
                             <div className="gallery-video-caption">
-                                <h4>AK<span>Sports</span></h4>
-                                <p>Coming soon..</p>
-                                <br/><br/>
+                                <h4>AK Sports Academy</h4>
+                                    <p>(Rajguru nagar)</p>
+                                <br/>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
@@ -141,9 +178,9 @@ export function Gallery() {
                                 ></iframe>
                             </div>
                             <div className="gallery-video-caption">
-                                <h4>AK<span>Sports</span></h4>
-                                <p>Coming soon..</p>
-                                <br/><br/>
+                                <h4>AK Sports Academy</h4>
+                                    <p>(Rajguru nagar)</p>
+                                <br/>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
@@ -159,9 +196,9 @@ export function Gallery() {
                                 ></iframe>
                             </div>
                             <div className="gallery-video-caption">
-                                <h4>AK<span>Sports</span></h4>
-                                <p>Coming soon..</p>
-                                <br/><br/>
+                                <h4>AK Sports Academy</h4>
+                                    <p>(Rajguru nagar)</p>
+                                <br/>
                             </div>
                         </div>
                     </div>
@@ -179,9 +216,9 @@ export function Gallery() {
                                 ></iframe>
                             </div>
                             <div className="gallery-video-caption">
-                                <h4>AK<span>Sports</span></h4>
-                                <p>Coming soon..</p>
-                                <br/><br/>
+                                <h4>AK Sports Academy</h4>
+                                    <p>(Rajguru nagar)</p>
+                                <br/>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
@@ -197,9 +234,9 @@ export function Gallery() {
                                 ></iframe>
                             </div>
                             <div className="gallery-video-caption">
-                                <h4>AK<span>Sports</span></h4>
-                                <p>Coming soon..</p>
-                                <br/><br/>
+                                <h4>AK Sports Academy</h4>
+                                    <p>(Rajguru nagar)</p>
+                                <br/>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 gallery-grids">
@@ -215,9 +252,9 @@ export function Gallery() {
                                 ></iframe>
                             </div>
                             <div className="gallery-video-caption">
-                                <h4>AK<span>Sports</span></h4>
-                                <p>Coming soon..</p>
-                                <br/><br/>
+                                <h4>AK Sports Academy</h4>
+                                    <p>(Rajguru nagar)</p>
+                                <br/>
                             </div>
                         </div>
                     </div>

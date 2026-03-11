@@ -53,6 +53,7 @@ export function AdminStudentDetails() {
                     Name: student.name,
                     Email: student.email,
                     Phone: student.phone,
+                    Location: student.location,
                     Message: student.message,
                     AdminComments: student.adminComments,
                     Fullfilled: student.fullfilled,
@@ -190,7 +191,9 @@ export function AdminStudentDetails() {
 
         if (search) {
             const s = search.toLowerCase();
-            ok = student.Email.toLowerCase().includes(s) || student.Phone.includes(s);
+            ok = student.Email.toLowerCase().includes(s)
+                || student.Phone.includes(s)
+                || (student.Location || '').toLowerCase().includes(s);
         }
         if (ok && filter !== 'All') {
             if (!isValidRegDate) return false;
@@ -313,7 +316,7 @@ export function AdminStudentDetails() {
                     </select>
                     <input
                         type="text"
-                        placeholder="Search email or phone"
+                        placeholder="Search email, phone or location"
                         value={search}
                         onChange={changeSearch}
                     />
@@ -326,6 +329,7 @@ export function AdminStudentDetails() {
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Phone</th>
+                                <th>Location</th>
                                 <th>Registration Date</th>
                                 <th>Enquiry Message</th>
                                 <th>Admin Comments</th>
@@ -343,6 +347,7 @@ export function AdminStudentDetails() {
                                             <td>{s.Name}</td>
                                             <td>{s.Email}</td>
                                             <td>{s.Phone}</td>
+                                            <td>{s.Location || '-'}</td>
                                             <td>{formatRegistrationDate(s.registrationDate)}</td>
                                             <td>{s.Message || '-'}</td>
                                             <td>
@@ -357,7 +362,7 @@ export function AdminStudentDetails() {
                                 })
                             ) : (
                                 <tr>
-                                    <td colSpan="7">No records found</td>
+                                    <td colSpan="8">No records found</td>
                                 </tr>
                             )}
                         </tbody>

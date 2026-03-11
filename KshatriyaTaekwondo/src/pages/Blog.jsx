@@ -14,14 +14,14 @@ export function Blog() {
             img: g6,
             date: '28 Feb 2026',
             title: 'Belt Exam Preparation Guide',
-            snippet: 'Prepare confidently for grading with a clear plan for technique, fitness, and mindset.',
+            snippet: 'Prepare confidently for grading with a clear plan for technique, fitness, mindset and professional training.',
             content: `Belt exam success comes from consistency and focused revision. Break preparation into poomsae, fundamentals, sparring basics, terminology, and discipline habits. Weekly feedback from coaches and regular mock evaluations help students perform with confidence on grading day.`
         },
         {
             img: g7,
             date: '20 Feb 2026',
             title: 'Power Training for Athletes',
-            snippet: 'Use smart strength work to improve explosive kicks, joint stability, and overall athletic power.',
+            snippet: 'Use smart strength work to improve explosive kicks, joint stability, and the overall athletic power.',
             content: `Power training for Taekwondo should improve speed and explosiveness, not just muscle size. Combine squats, lunges, plyometric drills, and controlled resistance training with proper recovery. This approach builds stronger kicks while protecting joints and reducing injury risk.`
         },
         {
@@ -81,14 +81,14 @@ export function Blog() {
                     <h3 className="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Our Blog</h3>
                     <div className="row blog-inner-wls">
                         {posts.map((post, idx) => (
-                            <div key={idx} className={`col-lg-4 col-md-4 col-sm-4 ser-inner-img p-0${idx % 3 === 2 ? ' blog-gap' : ''}`}
+                            <div key={idx} className="col-lg-4 col-md-4 col-sm-6 ser-inner-img blog-post-card"
                                 onClick={() => openModal(post)}
                                 style={{ cursor: 'pointer' }}
                             >
                                 <img src={post.img} alt="" className="img-fluid" />
                                 <div className="w3l-ser-sub-txt">
                                     <span className="far fa-calendar-alt"></span>
-                                    <p className="date-here mb-2">{post.date}</p>
+                                    <p className="date-here mb-2" style={{color:"black"}}>{post.date}</p>
                                     <p>{post.snippet}</p>
                                     <h4 className="mt-3">{post.title}</h4>
                                 </div>
