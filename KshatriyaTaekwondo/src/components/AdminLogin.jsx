@@ -8,7 +8,7 @@ import {JwtActions} from '../store/slices/JwtSlice.js';
 import {AuthActions} from '../store/slices/AuthSlice.js';
 
 export function AdminLogin() {
-    const LOGIN_LOADER_DELAY_MS = 1000;
+    const LOGIN_LOADER_DELAY_MS = 2000; //change it back to 1000 after enable
 
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -47,9 +47,17 @@ export function AdminLogin() {
         setLoginLoader({
             isVisible: true,
             status: 'loading',
-            message: 'Authenticating...'
+            message: 'This feature has been disabled, temporary! will be available soon..'//'Authenticating...'
         });
         await delay(LOGIN_LOADER_DELAY_MS)
+
+         setLoginLoader((previousState) => ({
+                ...previousState,
+                isVisible: false
+            }));
+            setIsSubmittingLogin(false);
+        return;
+
         try {
             const userLoginDto = new Login(email,password);
             const result = await LoginUser(userLoginDto);
