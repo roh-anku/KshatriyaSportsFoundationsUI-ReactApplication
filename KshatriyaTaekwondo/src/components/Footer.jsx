@@ -18,12 +18,12 @@ export function Footer() {
                             <h4> Opening Hours</h4>
                             <div className="wls-hours-list">
                                 <ul>
-                                    <li className="d-flex">Monday:  <span className="time ml-auto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:30-18:30</span></li>
-                                    <li className="d-flex">Tuesday:  <span className="time ml-auto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:30-18:30</span></li>
-                                    <li className="d-flex">Wednesday:<span className="time ml-auto">&nbsp;9:30-18:30</span></li>
-                                    <li className="d-flex">Thursday: <span className="time ml-auto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:30-18:30</span></li>
-                                    <li className="d-flex">Friday:   <span className="time ml-auto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:30-18:30</span></li>
-                                    <li className="d-flex">Saturday: <span className="time ml-auto"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:30-18:30</span></li>
+                                    <li className="d-flex">Monday:  <span className="time ml-auto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 PM - 9 PM</span></li>
+                                    <li className="d-flex">Tuesday:  <span className="time ml-auto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 PM - 9 PM</span></li>
+                                    <li className="d-flex">Wednesday:<span className="time ml-auto">&nbsp;5 PM - 9 PM</span></li>
+                                    <li className="d-flex">Thursday: <span className="time ml-auto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 PM - 9 PM</span></li>
+                                    <li className="d-flex">Friday:   <span className="time ml-auto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 PM - 9 PM</span></li>
+                                    <li className="d-flex">Saturday: <span className="time ml-auto"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 PM - 9 PM</span></li>
                                     <li className="d-flex">Sunday:   <span className="time ml-auto"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;closed</span></li>
                                 </ul>
                             </div>
