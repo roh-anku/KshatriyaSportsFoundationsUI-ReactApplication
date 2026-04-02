@@ -143,7 +143,7 @@ export function About() {
                                     </a>
                                 </div>
                                 <div className="team-content text-center">
-                                    <h4>Vinod Torat - sir</h4>
+                                    <h4>Vinod Thorat - sir</h4>
                                     <span className="pt-2">Kukiwon 2nd Dan Black Belt</span>
                                 </div>
                             </div>

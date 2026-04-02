@@ -212,12 +212,12 @@ export function Contact() {
                                     {/* <ul>
                                         <li>+(91) 9130330506 (Akshay Sir)</li>
                                         <li>+(91) 7721086572 (Swapnil Miraje Sir)</li>
-                                        <li>+(91) 7588026388 (Vinod Torat Sir)</li>
+                                        <li>+(91) 7588026388 (Vinod Thorat Sir)</li>
                                         <li>+(91) 8149200719 (Poonam Ma'am)</li>
                                     </ul>  */}
                                     <p style={{textAlign:"justify"}}>+(91) 9130330506 (Akshay Sir)<br />
                                         +(91) 7721086572 (Swapnil Miraje Sir)<br/>
-                                        +(91) 7588026388 (Vinod Torat Sir)<br/>
+                                        +(91) 7588026388 (Vinod Thorat Sir)<br/>
                                         +(91) 8149200719 (Poonam Ma'am)<br/>
                                     </p >
                                     <br/><br/><br/><br/><br/><br/><br/>
